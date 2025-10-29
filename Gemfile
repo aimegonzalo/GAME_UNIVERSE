@@ -71,3 +71,9 @@ gem 'tailwindcss-rails', '~> 4.4'
 
 #Gema para IA
 gem 'ruby_llm', '~> 1.8', '>= 1.8.2'
+
+#gema simple form
+gem 'simple_form', '~> 5.4'
+
+#gema simple form tailwind
+gem 'simple_form-tailwind', '~> 0.2.0'
