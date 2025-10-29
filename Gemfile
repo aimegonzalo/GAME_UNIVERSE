@@ -69,14 +69,54 @@ end
 #Gema para estilos css
 gem 'tailwindcss-rails', '~> 4.4'
 
-#Gema para IA
-gem 'ruby_llm', '~> 1.8', '>= 1.8.2'
-
 #gema simple form
 gem 'simple_form', '~> 5.4'
 
 #gema simple form tailwind
 gem 'simple_form-tailwind', '~> 0.2.0'
 
-#Gema devise para autenticaciones
+# Autenticación / Acceso
 gem "devise"
+gem "devise-jwt"
+gem "omniauth"                  # base OAuth
+gem "omniauth-steam"            # ejemplo de integración social PC (inicio de sesión)
+# Para PSN/Xbox/Nintendo, se implementa con omniauth-oauth2 personalizado:
+gem "omniauth-oauth2"
+
+# IA / LLM / RAG / Embeddings
+gem 'ruby_llm', '~> 1.8', '>= 1.8.2'
+gem "ruby-openai"
+
+# Búsqueda y vectores
+gem 'pgvector', '~> 0.3.2'
+gem "pg_search"
+
+# Notificaciones y tiempo real
+gem "noticed"
+# (Rails ya trae ActionCable. Para escalar: anycable-rails)
+
+# Jobs / Scheduler
+gem "sidekiq"
+gem "sidekiq-cron"
+gem "sidekiq-unique-jobs"
+
+# Integraciones / scraping / APIs
+gem "httparty"
+gem "faraday"
+gem "nokogiri"
+gem "money-rails"
+gem "countries"
+
+# Observabilidad / calidad
+gem "lograge"
+gem "oj"
+gem "dotenv-rails", groups: [:development, :test]
+gem "rspec-rails", groups: [:development, :test]
+gem "factory_bot_rails", groups: [:development, :test]
+gem "faker", groups: [:development, :test]
+gem "rack-attack"
+gem "brakeman", group: :development
+gem "bundler-audit", group: :development
+
+# i18n
+gem "rails-i18n"
