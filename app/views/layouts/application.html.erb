@@ -10,6 +10,7 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "shared/navbar" %>
+    <main class="container mx-auto px-4 py-6"><%= yield %></main>
   </body>
 </html>
