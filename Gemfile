@@ -79,5 +79,4 @@ gem 'simple_form', '~> 5.4'
 gem 'simple_form-tailwind', '~> 0.2.0'
 
 #Gema devise para autenticaciones
-
 gem "devise"
