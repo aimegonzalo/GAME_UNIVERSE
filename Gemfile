@@ -65,3 +65,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+#Gema para estilos css
+gem 'tailwindcss-rails', '~> 4.4'
+
+#Gema para IA
+gem 'ruby_llm', '~> 1.8', '>= 1.8.2'
